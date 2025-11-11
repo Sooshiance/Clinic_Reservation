@@ -1,7 +1,8 @@
+from typing import List
 import subprocess
 
 
-def scan_wifi_linux():
+def scan_wifi_linux() -> List[str]:
     try:
         result = subprocess.check_output(
             [
